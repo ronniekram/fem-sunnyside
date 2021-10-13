@@ -1,15 +1,24 @@
 import React from 'react';
-import { ReactComponent as Logo } from '../../assets/svg/logo.svg';
-import { ReactComponent as Hamburger } from '../../assets/svg/icon-hamburger.svg';
+
+// Styles
+import styles from '../../assets/style/layout/nav.module.scss';
+
+// Images
+import logo from '../../assets/svg/logo.svg';
+import hamburger from '../../assets/svg/icon-hamburger.svg';
 
 const Navigation = () => {
   return (
     <nav>
       <div>
-        <Logo className="" />
+        <img src={logo} alt="" />
       </div>
 
-      <div className="desktop">
+      <div>
+        <img src={hamburger} alt="" />
+      </div>
+
+      {/* <div className="desktop">
         <ul>
           <li>About</li>
           <li>Services</li>
@@ -25,7 +34,7 @@ const Navigation = () => {
           <li>Projects</li>
           <li>Contact</li>
         </ul>
-      </div>
+      </div> */}
     </nav>
   );
 };

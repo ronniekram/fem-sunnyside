@@ -1,1 +1,11 @@
 @import '../globals';
+
+nav {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}

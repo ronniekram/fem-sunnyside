@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Info = () => {
+const Info = ({ image, heading, text, color }) => {
   return (
     <div>
-      
+      <img src={image} />
     </div>
   );
 };

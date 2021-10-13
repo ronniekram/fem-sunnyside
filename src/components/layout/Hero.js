@@ -1,12 +1,17 @@
 import React from 'react';
-import { ReactComponent as hero } from '../../assets/img/hero.jpg';
+import arrow from '../../assets/svg/icon-arrow-down.svg';
+import styles from '../../assets/style/layout/hero.module.scss';
+
 
 const Hero = () => {
   return (
     <header>
+
       <div>
-        <img src={hero} alt="Half an orange slice on blue backdrop." />
+        <h1> We are creatives </h1>
+        <img src={arrow} alt="" />
       </div>
+
     </header>
   );
 };
