@@ -1,5 +1,26 @@
 @import './globals';
 
 section {
+  position: relative;
+
+  .image {
+    position: absolute;
+    z-index: 0;
+  }
+
+  .text {
+    position: absolute;
+    z-index: 1;
+
+    p {
+
+      .blue {
+
+      }
   
+      .green {
+        
+      }
+    }
+  }
 }

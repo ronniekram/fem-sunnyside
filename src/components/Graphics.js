@@ -1,4 +1,5 @@
 import React from 'react';
+import Graphic from './Graphic';
 
 // Images
 import cherry from '../assets/img/cherry.jpg';
@@ -22,9 +23,14 @@ const Graphics = () => {
       color: "blue"
     },
   ];
+
+  const renderGraphics = () => {
+    return graphics.map(graphic => <Graphic image={graphic.image} heading={graphic.text} color={graphic.color} />);
+  };
+
   return (
     <article>
-      
+      {renderGraphics()}
     </article>
   );
 };
