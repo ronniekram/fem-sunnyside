@@ -3,7 +3,7 @@ import Graphic from './Graphic';
 
 // Images
 import cherry from '../assets/img/cherry.jpg';
-import orange from '../assets/img/orange.jpg';
+import tangerine from '../assets/img/tangerine.jpg';
 
 // Styling
 import styles from '../assets/style/graphics.module.scss';
@@ -17,7 +17,7 @@ const Graphics = () => {
       color: "green"
     },
     {
-      image: orange,
+      image: tangerine,
       heading: "Photography",
       text: "Increase your credibility by getting the most stunning, high-quality photos that improve your business image.",
       color: "blue"
@@ -25,7 +25,7 @@ const Graphics = () => {
   ];
 
   const renderGraphics = () => {
-    return graphics.map(graphic => <Graphic image={graphic.image} heading={graphic.text} color={graphic.color} />);
+    return graphics.map(graphic => <Graphic image={graphic.image} heading={graphic.heading} text={graphic.text} color={graphic.color} />);
   };
 
   return (

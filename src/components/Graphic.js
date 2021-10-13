@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../assets/style/graphic.scss';
+import styles from '../assets/style/graphic.module.scss';
 
 const Graphic = ({ image, heading, text, color }) => {
   const colorStyle = color === 'blue' ? styles.blue : styles.green;

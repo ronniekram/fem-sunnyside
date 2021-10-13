@@ -1,14 +1,16 @@
 @import './globals';
 
 section {
-  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
 
   .image {
-    position: absolute;
+    // position: absolute;
     z-index: 0;
   }
 
   .text {
+    justify-self: flex-end;
     position: absolute;
     z-index: 1;
     text-align: center;
@@ -18,11 +20,11 @@ section {
     }
 
     .green {
-      color: $graphicText;
+      color: $designText;
     }
 
     h1 {
-      font-family: $heading;
+      font-family: $header;
       font-weight: 900;
       font-size: 1.75rem;
       letter-spacing: -0.2px;
