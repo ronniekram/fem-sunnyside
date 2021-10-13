@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../assets/style/graphic.scss';
 
 const Graphic = ({ image, heading, text, color }) => {
-  const paragraphStyle = color === 'blue' ? styles.blue : styles.green;
+  const colorStyle = color === 'blue' ? styles.blue : styles.green;
 
   return (
     <section>
@@ -11,8 +11,8 @@ const Graphic = ({ image, heading, text, color }) => {
       </div>
 
       <div className={styles.text}>
-        <h1>{heading}</h1>
-        <p className={paragraphStyle}>{text}</p>
+        <h1 className={colorStyle}>{heading}</h1>
+        <p className={colorStyle}>{text}</p>
       </div>
     </section>
   );

@@ -11,16 +11,29 @@ section {
   .text {
     position: absolute;
     z-index: 1;
+    text-align: center;
+
+    .blue {
+      color: $photoText;
+    }
+
+    .green {
+      color: $graphicText;
+    }
+
+    h1 {
+      font-family: $heading;
+      font-weight: 900;
+      font-size: 1.75rem;
+      letter-spacing: -0.2px;
+      line-height: 2.1575rem;
+    }
 
     p {
-
-      .blue {
-
-      }
-  
-      .green {
-        
-      }
+      font-family: $body;
+      font-size: 1rem;
+      line-height: 1.6875rem;
+      letter-spacing: -0.11px;
     }
   }
 }
