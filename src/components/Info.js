@@ -6,15 +6,17 @@ const Info = ({ image, heading, text, color }) => {
 
   return (
     <section>
+
       <div>
         <img src={image} alt="" />
       </div>
 
-      <div>
+      <div className={styles.text}>
         <h1>{heading}</h1>
         <p>{text}</p>
         <a href="#" className={anchorStyle}>Learn More</a>
       </div>
+
     </section>
   );
 };
