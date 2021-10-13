@@ -3,10 +3,10 @@ import React from 'react';
 // STYLES
 import styles from '../../assets/style/testimonials/testimonial.module.scss';
 
-const Testimonial = () => {
+const Testimonial = ({image, name, }) => {
   return (
     <section>
-      
+      <img src={} />
     </section>
   );
 }; 

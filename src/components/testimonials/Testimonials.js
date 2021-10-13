@@ -14,25 +14,25 @@ const Testimonials = () => {
     {
       text: "We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.",
       name: "Emily R.",
-      title: "Marketing Director",
+      role: "Marketing Director",
       avatar: emily
     },
     {
       text: "Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.",
       name: "Thomas S.",
-      title: "Chief Operating Officer",
+      role: "Chief Operating Officer",
       avatar: thomas
     },
     {
       text: "Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!",
       name: "Jennie F.",
-      title: "Business Owner",
+      role: "Business Owner",
       avatar: jennie
     },
   ];
 
   const renderTestimonials = () => {
-    return testimonials.map(tst => <Testimonial text={tst.text} name={tst.name} title={tst.title} avatar={tst.avatar} />)
+    return testimonials.map(tst => <Testimonial text={tst.text} name={tst.name} role={tst.role} avatar={tst.avatar} />)
   };
 
   return (

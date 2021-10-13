@@ -1,1 +1,17 @@
 @import '../globals';
+
+article {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+
+  h1 {
+    color: $accentText;
+    font-family: $header;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: .25rem;
+    word-spacing: 1px;
+    line-height: 100%;
+  }
+}
