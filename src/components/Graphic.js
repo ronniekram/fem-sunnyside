@@ -5,14 +5,10 @@ const Graphic = ({ image, heading, text, color }) => {
   const colorStyle = color === 'blue' ? styles.blue : styles.green;
 
   return (
-    <section>
-      <div className={styles.image}>
-        <img src={image} alt="" />
-      </div>
-
+    <section className={colorStyle}>
       <div className={styles.text}>
-        <h1 className={colorStyle}>{heading}</h1>
-        <p className={colorStyle}>{text}</p>
+        <h1>{heading}</h1>
+        <p>{text}</p>
       </div>
     </section>
   );

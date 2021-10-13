@@ -40,3 +40,10 @@
       @content;
   }
 }
+
+@mixin graphic-background($imgUrl) {
+  background-image: url($imgUrl);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+}

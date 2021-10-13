@@ -1,27 +1,16 @@
 @import './globals';
 
 section {
+  min-height: 600px;
   display: flex;
   flex-flow: column nowrap;
-
-  .image {
-    // position: absolute;
-    z-index: 0;
-  }
+  justify-content: flex-end;
 
   .text {
-    justify-self: flex-end;
-    position: absolute;
-    z-index: 1;
     text-align: center;
 
-    .blue {
-      color: $photoText;
-    }
-
-    .green {
-      color: $designText;
-    }
+    // TOP RIGHT BOTTOM LEFT
+    padding: 0rem 1rem 3.6875rem 1rem;
 
     h1 {
       font-family: $header;
@@ -38,4 +27,14 @@ section {
       letter-spacing: -0.11px;
     }
   }
+}
+
+.blue {
+  color: $photoText;
+  @include graphic-background('../img/mobile/image-photography.jpg');
+}
+
+.green {
+  color: $designText;
+  @include graphic-background('../img/mobile/image-graphic-design.jpg');
 }
