@@ -1,10 +1,13 @@
 import React from 'react';
 
+// STYLES
+import styles from '../../assets/style/testimonials/testimonial.module.scss';
+
 const Testimonial = () => {
   return (
-    <article>
+    <section>
       
-    </article>
+    </section>
   );
 }; 
 
