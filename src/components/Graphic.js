@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Graphic = () => {
+const Graphic = ({ image, heading, text, color }) => {
   return (
-    <div>
+    <section>
       
-    </div>
+    </section>
   );
 };
 
