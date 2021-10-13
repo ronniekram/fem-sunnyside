@@ -38,6 +38,8 @@ section {
     }
   
     a {
+      color: $nameText;
+      text-decoration: none;
       text-transform: uppercase;
       font-size: 0.9375rem;
       letter-spacing: 1px;
