@@ -1,10 +1,21 @@
 import React from 'react';
+import styles from '../assets/style/info.module.scss';
 
 const Info = ({ image, heading, text, color }) => {
+  const anchorStyle = color === 'red' ? styles.red : styles.yellow;
+
   return (
-    <div>
-      <img src={image} />
-    </div>
+    <section>
+      <div>
+        <img src={image} alt="" />
+      </div>
+
+      <div>
+        <h1>{heading}</h1>
+        <p>{text}</p>
+        <a href="#" className={anchorStyle}>Learn More</a>
+      </div>
+    </section>
   );
 };
 
