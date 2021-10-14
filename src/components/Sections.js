@@ -22,7 +22,7 @@ const Sections = () => {
   ];
 
   const renderInfo = () => {
-    return sections.map(section => <Info image={section.image} heading={section.heading} text={section.text} color={'red'} />);
+    return sections.map(section => <Info image={section.image} heading={section.heading} text={section.text} color={section.color} />);
   };
 
   return (

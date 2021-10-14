@@ -3,20 +3,9 @@
 section {
   display: flex;
   flex-flow: column nowrap;
-
   color: $nameText;
   font-family: $header;
   word-spacing: 1px;
-
-  @include lg {
-    section {
-      flex-flow: row nowrap;
-
-      img {
-        width: 50%;
-      }
-    }
-  }
 
   img {
     width: 100%;
@@ -61,6 +50,36 @@ section {
     
       .yellow {
         
+      }
+    }
+  }
+}
+
+@include lg {
+
+  section {
+    margin: 0;
+    min-width: 100%;
+    display: flex;
+    flex-flow: row nowrap !important;
+    justify-content: space-between;
+  
+    div {
+      width: 50%;
+      margin-bottom: -0.25rem;
+    }
+
+    .text {
+      align-self: center;
+      text-align: start;
+      margin: 0;
+      padding: 0 6.875rem 0 10.3125rem;
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 3.0825rem;
+        letter-spacing: -0.29px;
       }
     }
   }
