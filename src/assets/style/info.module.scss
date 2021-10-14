@@ -8,6 +8,16 @@ section {
   font-family: $header;
   word-spacing: 1px;
 
+  @include lg {
+    section {
+      flex-flow: row nowrap;
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+
   img {
     width: 100%;
   }

@@ -3,6 +3,7 @@ import Hero from './components/layout/Hero';
 import Sections from './components/Sections';
 import Graphics from './components/Graphics';
 import Testimonials from './components/testimonials/Testimonials';
+import Footer from './components/layout/Footer';
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Sections />
       <Graphics />
       <Testimonials />
+      <Footer />
     </>
   );
 };

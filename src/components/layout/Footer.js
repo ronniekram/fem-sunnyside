@@ -20,20 +20,27 @@ const Footer = () => {
   return (
     <footer>
       <div className={styles.photos}>
-        <img src={milk} alt="" />
-        <img src={orange} alt="" />
-        <img src={cone} alt="" />
-        <img src={sugar} alt="" />
+
+        <div>
+          <img src={milk} alt="" />
+          <img src={orange} alt="" />
+        </div>
+
+        <div className={styles.bottom}>
+          <img src={cone} alt="" />
+          <img src={sugar} alt="" />
+        </div>
+
       </div>
 
       <div className={styles.info}>
-        <img src={logo} alt="" />
+        <img src={logo} className={styles.logo} alt="" />
 
-        <ul className={styles.links}>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-        </ul>
+        <div className={styles.links}>
+          <p>About</p>
+          <p>Services</p>
+          <p>Projects</p>
+        </div>
 
         <div className={styles.social}>
           <img src={facebook} alt="" />

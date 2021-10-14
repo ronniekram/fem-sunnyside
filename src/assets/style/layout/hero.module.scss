@@ -2,7 +2,6 @@
 
 header {
   margin: auto;
-  // position: absolute;
   top: 0;
   z-index: 0;
   display: flex;
@@ -12,6 +11,26 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @include lg {
+    background-image: url(../../img/hero.jpg);
+    min-height: 50rem;
+    background-size: scale-down;
+
+    div {
+      margin: auto;
+      margin-top: 12.1875rem;
+    }
+
+    h1 {
+
+    }
+
+    img {
+      margin: 4.25rem 0;
+    }
+
+  }
 
   div {
     align-self: center;
@@ -26,10 +45,6 @@ header {
       line-height: 49.32px;
       text-transform: uppercase;
       color: white;
-    }
-
-    img {
-      // padding: 3.25rem 0;
     }
   }
 }
