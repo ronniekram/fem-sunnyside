@@ -1,20 +1,42 @@
 @import '../globals';
 
-section {
+.testimonial {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 0;
+  padding: 4rem 1.5rem;
+  font-size: 1.125rem;
+  letter-spacing: -0.13px;
+  word-spacing: 1px;
 
   img {
-
+    width: 4.5rem;
+    border-radius: 50%;
   }
 
-  h1 {
-
+  .name {
+    color: $nameText;
+    font-family: $header;
+    font-size: 1.125rem;
+    font-weight: 900;
+    line-height: 100%;
   }
 
   p {
+    color: $testimonialText;
+    font-family: $body;
+    line-height: 2rem;
+    font-weight: 500;
+  }
 
-    .role {
-      
-    }
+  .role {
+    padding: 0;
+    margin: -.25rem 0 0 0;
+    color: $accentText !important;
+    font-size: 0.875rem !important;
+    letter-spacing: -0.1px !important;
+    line-height: 1.5625rem !important;
   }
 
 }

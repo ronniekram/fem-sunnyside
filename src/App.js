@@ -2,6 +2,7 @@ import Navigation from './components/layout/Navigation';
 import Hero from './components/layout/Hero';
 import Sections from './components/Sections';
 import Graphics from './components/Graphics';
+import Testimonials from './components/testimonials/Testimonials';
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <Sections />
       <Graphics />
+      <Testimonials />
     </>
   );
 };

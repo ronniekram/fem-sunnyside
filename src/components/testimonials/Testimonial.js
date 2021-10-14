@@ -5,12 +5,12 @@ import styles from '../../assets/style/testimonials/testimonial.module.scss';
 
 const Testimonial = ({ avatar, text, name, role }) => {
   return (
-    <section>
+    <div className={styles.testimonial}>
       <img src={avatar} alt={`${name}'s profile avatar.`} />
       <p>{text}</p>
-      <h1>{name}</h1>
+      <h1 className={styles.name}>{name}</h1>
       <p className={styles.role}>{role}</p>
-    </section>
+    </div>
   );
 }; 
 

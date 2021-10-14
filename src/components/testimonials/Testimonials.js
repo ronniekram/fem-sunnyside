@@ -36,9 +36,12 @@ const Testimonials = () => {
   };
 
   return (
-    <article>
-      <h1>Client Testimonials</h1>
-      {renderTestimonials()}
+    <article className={styles.testimonialsContainer}>
+      <h1 className={styles.title}>Client Testimonials</h1>
+      
+      <div className={styles.list}>
+        {renderTestimonials()}
+      </div>
     </article>
   );
 };

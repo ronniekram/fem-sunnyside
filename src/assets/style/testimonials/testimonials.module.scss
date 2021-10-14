@@ -1,17 +1,21 @@
 @import '../globals';
 
-article {
-  display: flex;
-  flex-flow: column nowrap;
+.testimonialsContainer {
   text-align: center;
+  padding: 4rem 0;
 
-  h1 {
+  .title {
     color: $accentText;
     font-family: $header;
     font-weight: 900;
     font-size: 1rem;
+    text-transform: uppercase;
     letter-spacing: .25rem;
     word-spacing: 1px;
     line-height: 100%;
+  }
+
+  .list {
+    padding: 4rem 0;
   }
 }
