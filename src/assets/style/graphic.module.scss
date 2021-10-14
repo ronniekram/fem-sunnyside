@@ -1,10 +1,16 @@
 @import './globals';
 
 section {
-  min-height: 600px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
+  div {
+    min-height: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+
+    // @include lg {
+    //   min-height: unset;
+    // }
+  }
 
   .text {
     text-align: center;
@@ -32,9 +38,11 @@ section {
 .blue {
   color: $photoText;
   @include graphic-background('../img/mobile/image-photography.jpg');
+  margin: 0;
 }
 
 .green {
   color: $designText;
   @include graphic-background('../img/mobile/image-graphic-design.jpg');
+  margin: 0;
 }

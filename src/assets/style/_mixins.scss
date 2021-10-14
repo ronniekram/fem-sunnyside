@@ -46,4 +46,8 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
+
+  @include lg {
+    background-size: 50%;
+  }
 }

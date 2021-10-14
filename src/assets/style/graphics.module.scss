@@ -1,6 +1,11 @@
 @import './globals';
 
-article {
+.container {
   display: flex;
   flex-flow: column nowrap;
+
+  @include lg {
+    flex-flow: row nowrap !important;
+    justify-content: center;
+  }
 }

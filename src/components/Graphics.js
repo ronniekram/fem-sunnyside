@@ -29,7 +29,7 @@ const Graphics = () => {
   };
 
   return (
-    <article>
+    <article className={styles.container}>
       {renderGraphics()}
     </article>
   );
